@@ -1,6 +1,9 @@
 class HashMap{
-    constructor() {
-
+    constructor(size) {
+        this.buckets = []
+        for (let i = 0; i < size; i++) {
+            this.buckets.push([]);
+        }
     }
 
     hash(key) {
